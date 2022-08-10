@@ -2,19 +2,19 @@ pipeline {
     agent any
 
     stages {
-        stage("1_adim") {
+        stage("Build") {
             steps {
-                echo "Hello World"
+                echo "Build Success"
             }
         }
-         stage("2_adim") {
+         stage("Test") {
             steps {
-                echo "Hello World"
+                echo "Test Success"
             }
         }
-         stage("3_adim") {
+         stage("Deployment") {
             steps {
-                echo "Hello World"
+                echo "Deployment Success"
             }
         }
     }
